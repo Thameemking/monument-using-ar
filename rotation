@@ -1,0 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class rotation : MonoBehaviour
+{
+    // Start is called before the first frame update
+    public GameObject monumentsobject;
+    public Vector3 Rotationvector;
+    public void Update(){
+        monumentsobject.transform.Rotate(Rotationvector * Time.deltaTime);
+    }
+}
